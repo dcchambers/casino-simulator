@@ -11,15 +11,22 @@ function drawScreen(){
   //update the screen
 }
 
+function test(){
+  //var testPlayer = new Player("Jill", 45, "Female", 1000, 7);
+  //var testDealer = new Staff("Bob", 30, "Male", "Dealer", 15);
+  //var testGame = new Game("Test Game 1", testDealer, playerList, 5, 500);
+
+  alert(testPlayer.name);
+}
+
 function Game(gameName, dealer, listOfPlayers, minBet, maxBet){
   this.gameName = gameName;
   this.dealer = dealer;
   this.listOfPlayers = listOfPlayers;
   this.minBet = minBet;
   this.maxBet = maxBet;
-
 }
-// var testGame = new Game("Test Game 1", testDealer, <listOfPlayers>, 5, 500);
+//var testGame = new Game("Test Game 1", testDealer, <listOfPlayers>, 5, 500);
 
 function Player(playerName, age, gender, money, luckyNumber){
   this.playerName = playerName;
@@ -37,4 +44,4 @@ function Staff(staffName, age, gender, job, salary){
   this.job = job;
   this.salary = salary;
 }
-// var testDealer = new Staff("Bob", 30, "Male", "Dealer", 15);
+//var testDealer = new Staff("Bob", 30, "Male", "Dealer", 15);
