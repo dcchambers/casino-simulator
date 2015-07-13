@@ -51,5 +51,9 @@ function createNewStaff(staffName, age, gender, job, salary){
 }
 
 function createNewGuest(guestName, age, gender, money, luckyNumber){
-  
+
+}
+
+function hireStaff(){
+  document.getElementById('hireNewStaff').style.display='block';
 }
