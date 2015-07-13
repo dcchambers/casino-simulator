@@ -12,11 +12,11 @@ function drawScreen(){
 }
 
 function test(){
-  //var testPlayer = new Player("Jill", 45, "Female", 1000, 7);
-  //var testDealer = new Staff("Bob", 30, "Male", "Dealer", 15);
-  //var testGame = new Game("Test Game 1", testDealer, playerList, 5, 500);
+  var testPlayer = new Player("Jill", 45, "Female", 1000, 7);
+  var testDealer = new Staff("Bob", 30, "Male", "Dealer", 15);
+  var testGame = new Game("Test Game 1", testDealer, "playerList", 5, 500);
 
-  alert(testPlayer.name);
+  document.getElementById("test").innerText += testDealer.staffName+" | "+testPlayer.playerName+" | "+testGame.gameName;
 }
 
 function Game(gameName, dealer, listOfPlayers, minBet, maxBet){
