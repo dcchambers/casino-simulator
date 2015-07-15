@@ -1,4 +1,3 @@
-//var canvas = document.getElementById('display').getContext('2d');
 
 function update(){
   //Update tick... run calculations for staff, guests, and each game.
@@ -9,6 +8,16 @@ function update(){
 
 function drawScreen(){
   //update the screen
+
+  drawUI();
+}
+
+function drawUI(){
+  var ctx = document.getElementById('display').getContext('2d');
+  ctx.rect(20, 20, 100, 60);
+  ctx.font = '20px Arial';
+  ctx.fillText('Hire!', 45, 60);
+  ctx.stroke();
 }
 
 function test(){
