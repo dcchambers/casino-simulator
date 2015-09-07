@@ -1,3 +1,5 @@
+var guestList = [];
+
 
 function update(){
   //Update tick... run calculations for staff, guests, and each game.
@@ -37,19 +39,17 @@ function Game(gameName, dealer, listOfGuests, minBet, maxBet){
 }
 //var testGame = new Game("Test Game 1", testDealer, <listOfGuests>, 5, 500);
 
-function Guest(guestName, age, gender, money, luckyNumber){
+function Guest(guestName, age, money, luckyNumber){
   this.guestName = guestName;
   this.age = age;
-  this.gender = gender;
   this.money = money;
   this.luckyNumber = luckyNumber;
 }
 //var testGuest = new Guest("Jill", 45, "Female", 1000, 7);
 
-function Staff(staffName, age, gender, job, salary){
+function Staff(staffName, age, job, salary){
   this.staffName = staffName;
   this.age = age;
-  this.gender = gender;
   this.job = job;
   this.salary = salary;
 }
@@ -61,6 +61,15 @@ function createNewStaff(staffName, age, gender, job, salary){
 
 function createNewGuest(guestName, age, gender, money, luckyNumber){
 
+}
+
+function generateGuests(){
+  var i;
+  for (i = 0; i <10; i++) {
+    var tempGuestName = 'Guest' + i.toString();
+    createNewGuest(tempGuestName, 25, 1000, 7);
+  }
+  guestList.push(...TODO)...
 }
 
 function hireStaff(){

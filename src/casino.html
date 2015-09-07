@@ -1,13 +1,15 @@
 <html>
   <head>
     <title> Casino Simulator! </title>
-    <script src = "casino.js"></script>
+    <script src = 'casino.js'></script>
+    <link rel='stylesheet' type='text/css' href='casino.css'>
   </head>
 
   <body>
 
-    <button onclick="test()">Test!</button>
-    <button onclick="hireStaff()">Hire!</button>
+    <button onclick='newGame()'>New Game</button>
+    <button onclick='hireStaff()'>Hire!</button>
+    <button onclick='generateGuests()'>Generate Guests</button>
 
     <div id='hireNewStaff' style='display:none;'>
       Select job: <select>
@@ -17,13 +19,19 @@
       </select>
     </div>
 
-    <code>
-      <div id="test">
-        Staff List    Guest List    Game List<br>
-        ----------    ----------   ---------<br>
-      </div>
-    </code>
+    <table>
+      <td id='staffList'>
+        Staff:<br>
+      </td>
 
+      <td id='guestList'>
+        Guests:
+      </td>
+
+      <td id='gameList'>
+        Games:
+      </tds>
+    </table>
     <!--
     <canvas id="display" width="600" height="400" style="border:1px solid #d3d3d3;"></canvas>
     <button onclick="drawUI()">Draw UI</button>-->
